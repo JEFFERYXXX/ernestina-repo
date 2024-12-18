@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LORINDA'S BOUTIQUE</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body background="images/boutique.jpg"  >
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Lorinda's Boutique</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/dresses.html">Dresses</a></li>
+                <li><a href="/pages/accessories.html">Accessories</a></li>
+                <li><a href="/pages/bags.html">Bags</a></li>
+                <li><a href="/pages/footwear.html">Footwear</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dresses Section -->
+    <section id="dresses">
+        <h2>Dresses</h2>
+        <div class="products">
+            <div class="product">
+                <img src="../images/dress.jpg" alt="SUMMER DRESS">
+                <p>Summer Dress - $40</p>
+                <button onclick="addToCart('Summer Dress', 40)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/flawless dress.jpeg" alt="DRESS">
+                <p>Flawless Dress - $60</p>
+                <button onclick="addToCart('Winter Dress', 60)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section id="accessories">
+        <h2>Accessories</h2>
+        <div class="products">
+            <div class="product">
+                <img src="../images/necklace flower.jpg" alt="Necklace">
+                <p>Elegant Necklace - $20</p>
+                <button onclick="addToCart('Elegant Necklace', 20)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bracelet.jpg" alt="Bracelet">
+                <p>Stylish Bracelet - $15</p>
+                <button onclick="addToCart('Stylish Bracelet', 15)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bags Section -->
+    <section id="bags">
+        <h2>Bags</h2>
+        <div class="products">
+            <div class="product">
+                <img src="../images/OIP.jpg" alt="HAND BAG">
+                <p>Leather Handbag - $50</p>
+                <button onclick="addToCart('Leather Handbag', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/download (2).jpg" alt="LADIES BAG">
+                <p>ladies bag - $30</p>
+                <button onclick="addToCart('ladies bag', 30)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footwear Section -->
+    <section id="footwear">
+        <h2>Footwear</h2>
+        <div class="products">
+            <div class="product">
+                <img src="../images/th (2).jpg" alt="SNEAKERS">
+                <p> Sneakers - $45</p>
+                <button onclick="addToCart('Casual Sneakers', 45)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/OIP (2).jpg" alt="SLIPPERS & SANDLAS">
+                <p>slippers & sandlas - $70</p>
+                <button onclick="addToCart('slippers & sandlas', 70)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="blanksonernestina8@gmail.com">blanksonernestina8@gmail.com</a></p>
+        <p>Follow us on:
+            <a href="www.instagram/ewurama_peprah ">Instagram</a> |
+            <a href="#">Facebook</a> |
+            <a href="#">Snapchat</a>
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lorinda's Boutique. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Shopping Cart Array
+        const cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            alert(productName + ' has been added to your cart.');
+            console.log(cart);
+        }
+    </script>
+</body>
+</html>

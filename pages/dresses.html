@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LORINDA'S BOUTIQUE</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body background="../images/download.jpg">
+    <!-- Header and Navigation -->
+    <header>
+        <h1>Lorinda's Boutique</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/dresses.html">Dresses</a></li>
+                <li><a href="/pages/accessories.html">Accessories</a></li>
+                <li><a href="/pages/bags.html">Bags</a></li>
+                <li><a href="#footwear">Footwear</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dresses Section -->
+    <section id="dresses">
+        <h2 class="ass-header">Dresses</h2>
+        <div class="products">
+            <div class="product">
+                <img src="../images/yellow dress.jpg" alt="SUMMER DRESS">
+                <p>yellow dress - $40</p>
+                <p>size - medium & XL</p>
+                <button onclick="addToCart('yellow dress', 40)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/sunn dress.jpeg" alt="SUNN DRESS">
+                <p>sunn dress - $60</p>
+                <p>size - medium & L</p>
+                <button onclick="addToCart('sunn dress', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/street jeans skirt.jpeg" alt="STREET JEANS SKIRT">
+                <p>street jeans skirt - $65</p>
+                <p>size - medium</p>
+                <button onclick="addToCart('street jeans skirt', 65)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/MEN OUTFIT.jpeg" alt="MEN">
+                <p>MEN OUTFIT- $60</p>
+                <p>size - medium & XXL</p>
+                <button onclick="addToCart('MEN OUTFIT', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/LADIES TT.jpeg" alt="LADIES JEANS">
+                <p>LADIES JEANS - $60</p>
+                <p>size - medium & XL & XXL & small</p>
+                <button onclick="addToCart('LADIES TT', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/jeans shirtt.jpeg" alt="UNISEX JEANS SHIRT">
+                <p>jeans shirtt - $50</p>
+                <p>size - medium & XL</p>
+                <button onclick="addToCart('jeans shirtt', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/jeans lady.jpeg" alt="LADIES JEANS">
+                <p>jeans lady - $40</p>
+                <p>size - medium & XL & small</p>
+                <button onclick="addToCart('jeans lady', 40)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/dinner dress.jpg" alt="DINNER DRESS">
+                <p>dinner dress - $30</p>
+                <p>size - medium & XL</p>
+                <button onclick="addToCart('dinner dress', 30)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/simple flower dress.jpeg" alt=" FLOWER DRESS">
+                <p>simple flower dress - $60</p>
+                <p>size - medium & XL & L</p>
+                <button onclick="addToCart('simple flower dress', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/PLAY TIME DRESS.jpeg" alt="PLAY TIME DRESS">
+                <p>play time dress - $40</p>
+                <p>size - medium & XL</p>
+                <button onclick="addToCart('play tme dress', 40)">Add to Cart</button>
+            </div>s
+            <div class="product">
+                <img src="../images/lace top.jpg" alt="TOPS">
+                <p>lace top - $50</p>
+                <p>size - medium & XL & L</p>
+                <button onclick="addToCart('lace top', 50)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images//jeans skirt.jpeg" alt="JEANS SKIRT">
+                <p>jeans skirt - $60</p>
+                <p>size - medium & XL & small</p>
+                <button onclick="addToCart('jeans skirt', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/JEANS LONG SLEEVE.jpeg" alt="JEANS LONG SLEEVES">
+                <p>jeans long sleeve - $70</p>
+                <p>size - medium & XL</p>
+                <button onclick="addToCart('jeans long sleeve', 70)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images//high waist TT.jpeg" alt="HIGH WAIST TT">
+                <p>high waist TT - $60</p>
+                <p>size - medium & XL & XXXL</p>
+                <button onclick="addToCart('high waist TT', 60)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="../images/bruch dress.jpeg" alt="BRUNCH DRESS">
+                <p>brunch dress - $60</p>
+                <p>size - medium & XL</p>
+                <button onclick="addToCart('brunch dress ', 60)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Lorinda's Boutique. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Shopping Cart Array
+        const cart = [];
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            alert(productName + ' has been added to your cart.');
+            console.log(cart);
+        }
+    </script>
+</body>
+</html>
